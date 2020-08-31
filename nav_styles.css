@@ -1,0 +1,95 @@
+.menu{
+  overflow: hidden;
+}
+
+.brand {
+font-family: sans-serif;
+font-weight: 400;
+font-size: 15px;
+text-transform: uppercase;
+position: absolute;
+letter-spacing: 1px;
+top: 20px;
+left: 33px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0 !important;
+}
+
+.menu-items{
+  float: right;
+  margin: 0;
+}
+
+.menu-items .nav-link{
+  float: left;
+  font-family: sans-serif;
+}
+
+.menu-items .nav-link a{
+  position: relative;
+  display: block;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s cubic-bezier(0,.67,1,.35) 0s;
+}
+
+.menu-items .nav-link a:hover{
+  color: rgba(255,255,255,.9);
+}
+
+.menu-items .nav-link a::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaley(.1);
+  transform-origin: top;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s cubic-bezier(.75,-0.5,0,1.75) 0s;
+  z-index: -1;
+}
+
+.menu-items .nav-link a:hover:after{
+  transform: scaley(1);
+}
+
+.menu-items .nav-link:first-child a:after{ background: #4A707A; }
+.menu-items .nav-link:nth-child(2) a:after{ background: #7697A0; }
+.menu-items .nav-link:nth-child(3) a:after{ background: #999E9C; }
+.menu-items .nav-link:last-child a:after{ background: #94B0B7; }
+
+a:-webkit-any-link {
+  color: #444;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo {
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          color: #444;
+}
+
+#nav-placeholder{
+  border-bottom: 1px solid rgba(43,43,43,0.2);
+}
+
+.fixed-bottom {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: black !important;
+}

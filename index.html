@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="nav_styles.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <title>Home</title>
+</head>
+<body class="landing">
+  <header>
+       <!--Navigation bar-->
+       <div id="nav-placeholder"></div>
+       <script>
+       $(function(){
+         $("#nav-placeholder").load("nav.html");
+       });
+       </script>
+      <!--end of Navigation bar-->
+  </header>
+
+      <div class="container">
+          <p class="line-1 anim-typewriter">Architecture Begins Where Engineering Ends</p>
+
+              <ul class="social-media-list">
+                <li><a href="https://www.linkedin.com/in/saulius-leliuga/" target="_blank" class="contact-icon">
+                  <i class="fab fa-Linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.at/sauliusleliuga/" target="_blank" class="contact-icon">
+                  <i class="fab fa-Pinterest" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.behance.net/SauliusLeliuga" target="_blank" class="contact-icon">
+                  <i class="fab fa-Behance" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+      </div>
+    <footer> 
+        <div class="footer-copyright text-center py-3 fixed-bottom">© 2020 - All Rights Reserved</div>
+    </footer>        
+</body>
+</html>
+

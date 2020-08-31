@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="map_styles.css">
+    <link rel="stylesheet" href="nav_styles.css">
+  </head>
+  <body>
+    <header>
+      <!--Navigation bar-->
+     <div id="nav-placeholder"></div>
+     <script>
+     $(function(){
+       $("#nav-placeholder").load("nav.html");
+     });
+     </script>
+     <!--end of Navigation bar-->
+   </header>
+    <div id="map"></div>
+    <div id="capture"></div>
+    <div id="legend">
+      <ul>
+        <li><img id="icon" src="icon\icon-1.png" alt=""><p id="list">Built/Open</p></li>
+        <li><img id="icon" src="icon\icon-2.png" alt=""><p id="list">Construction Phase</p></li>
+        <li><img id="icon" src="icon\icon-3.png" alt=""><p id="list">Design Phase</p></li>
+      </ul>
+    </div>
+    <div id="edit">
+      <a href="https://www.google.com/maps/d/u/0/edit?mid=1zNF4GIxw_IvmPIibcORfI-KS1U9c6kI7&ll=54.53112716108082%2C24.823094500000014&z=10" target="_blank" style="color: #444; text-decoration: none;">EDIT MAP</a>
+    </div>
+    <script src="kml_link.js"></script>
+
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd5ltp2DhJTxOPHQDJ1jqXBBzgxEwqEvk&callback=initMap">
+    </script>
+    <footer> 
+      <div class="footer-copyright text-center py-3 fixed-bottom">© 2020 - All Rights Reserved</div>
+  </footer>
+  </body>
+</html>

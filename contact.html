@@ -1,0 +1,54 @@
+<html>
+    <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Contact</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="nav_styles.css">
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body class="landing">
+
+       <!--Navigation bar-->
+       <div id="nav-placeholder"></div>
+       <script>
+       $(function(){
+         $("#nav-placeholder").load("nav.html");
+       });
+       </script>
+      <!--end of Navigation bar-->
+
+      <div id="form-main">
+      <div id="form-div">
+
+        <form class="form" id="form1">
+
+        <div class="container">
+            <div style="text-align:center">
+              <h2 id="contact">CONTACT US</h2>
+            </div>
+            <p class="name">
+            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+            </p>
+            <p class="email">
+            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            </p>
+            <p class="text">
+            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+            </p>
+          <div class="submit">
+          <input type="submit" value="Send" id="button-blue"/>
+          <div class="ease"></div>
+          </div>
+        </form>
+    </div>
+    <footer> 
+      <div class="footer-copyright text-center py-3 fixed-bottom">© 2020 - All Rights Reserved</div>
+  </footer>
+  </body>
+</html>
+
+
+
+

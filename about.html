@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="nav_styles.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <title>About</title>
+</head>
+<body class="landing">
+    <header>
+       <!--Navigation bar-->
+       <div id="nav-placeholder"></div>
+       <script>
+       $(function(){
+         $("#nav-placeholder").load("nav.html");
+       });
+       </script>
+      <!--end of Navigation bar-->
+  </header>
+    <div class="container">
+        <h1 class="first"> Architect Saulius Leliūga</h1>
+            <div class="second">
+              <img id="img" src="img/saulius.jpg" alt="Saulius Leliūga" align="right" width="400" height="400">
+                <p>Architecture is not only my profession, but also a hobby. I devote all my attention to each project to create and find the best solutions.
+
+                  My goal is to solve as many problems during the design process, so that everything goes smoothly in construction. I am constantly interested in the latest construction and finishing technologies to create architecture with long-term value.
+                  
+                  I have accumulated professional experience in designing various constructions in Lithuania and wooden construction hotels in the USA.
+                  
+                  I use the most advanced 3D modeling programs to design, avoiding human error. The main tool of work – Autodesk REVIT – specialized parametric design program based on information modeling technology (BIM).
+                  
+                  BIM technology allows you to build a 3D model in virtual time, analyze it in various incisions (structural, energy, lighting analysis, etc.) and use the data obtained to organize construction work and calculate the costs required for construction.
+                </p>
+            </div>
+    </div>
+    <footer> 
+      <div class="footer-copyright text-center py-3 fixed-bottom">© 2020 - All Rights Reserved</div>
+    </footer>
+</body>
+</html>
